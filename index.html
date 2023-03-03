@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--primary meta tag-->
+    <meta name="description" content="Cafena ">
+    <meta name="keywords" content="Coffee, ">
+    <meta name="author" content="Kuljit Talukdar">
+
+    <title>CAFENA</title>
+
+
+    <!--css link-->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!--google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@400;600&family=ZCOOL+XiaoWei&display=swap"
+        rel="stylesheet">
+
+    
+    <!--email Js-->
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("my_43Uy7W1yrV0zmA");
+   })();
+</script>
+
+</head>
+
+<body>
+
+    <!--header-->
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="./images/logo.svg" width="75" height="53" alt="Cafena">
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+
+                    <li>
+                        <a href="#" class="navbar-link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link">Manu</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link">Reservation</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link">Pages</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link">Shop</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link">Contact</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <div class="search">
+                <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <button class="nav-open-btn" aria-label="toggle menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+
+        </div>
+    </header>
+
+
+    <main>
+        <article>
+
+            <!--hero-->
+
+            <section class="section hero" id="home" aria-label="home">
+                <div class="container">
+
+                    <figure class="hero-banner">
+                        <img src="./images/hero-banner.png" width="477" height="506" alt="hero-banner" class="w-100">
+                    </figure>
+
+                    <div class="hero-data-content">
+
+                        <h1 class="h1 hero-title">
+                            ONE OF THE BEST COFFEE 
+                            HOUSE IN YOUR HOME TOWN
+                        </h1>
+
+                        <p class="section-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit do eiusmod veniam, quis nostrud exercitation
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+
+                        <div class="hero-btn-group">
+                            <a href="#" class="btn btn-primary">Explore More</a>
+
+                            <a href="#" class="btn btn-seconday">Read More</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!--coffee list-->
+
+            <section class="section coffee" aria-label="Coffee">
+                <div class="container">
+
+                    <ul class="coffee-list">
+
+                        <li>
+
+                            <figure class="coffee-banner">
+                                <img src="./images/coffee-banner-1.png" width="250" height="256" loading="lazy" alt="coffee-banner" class="w-100">
+
+                                <p class="number">01</p>
+                                
+                                <h4 class="cooffee-tag">
+                                    Best Coffee Flavor
+                                </h4>
+                            
+                                <p class="coffee-section-text">
+                                    Curabitur semper erat a lacusey sedny
+                                    consequat,sit ametey.
+                                </p>
+                            </figure>
+
+                        </li>
+
+                        <li>
+
+                            <figure class="coffee-banner">
+                                <img src="./images/coffee-banner-2.png"  width="350" height="256" loading="lazy" alt="coffee-banner" class="w-100">
+
+                                <p class="number">02</p>
+
+                                <h4 class="cooffee-tag">
+                                    Proper Roasting
+                                </h4>
+
+                                <p class="coffee-section-text">
+                                    Curabitur semper erat a lacusey sedny
+                                    consequat,sit ametey.
+                                </p>
+                            </figure>
+
+                        </li>
+
+                        <li>
+
+                            <figure class="coffee-banner">
+                                <img src="./images/coffee-banner-1.png"  width="350" height="256" loading="lazy" alt="coffee-banner" class="w-100">
+
+                                <p class="number">03</p>
+
+                                <h4 class="cooffee-tag">
+                                    Place to Get Lost
+                                </h4>
+
+                                <p class="coffee-section-text">
+                                    Curabitur semper erat a lacusey sedny
+                                    consequat,sit ametey.
+                                </p>
+                            </figure>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+            <!--roasted coffee-->
+
+            <section class="section roasted" aria-label="Roasted">
+                <div class="container">
+
+                    <div class="roasted-data-content">
+
+                        <h2 class="h2 section-title">
+                            Roasted CoffeeFor You
+                        </h2>
+
+                        <p class="section-text">
+                            Donec et nibh maximus, congue est eu, mattis nunc. Praesent utquam quis quam venenatis fringilla. Morbi vestibulum id tellusmmodo mattis. Aliquam erat volutpat.
+                        </p>
+
+                        <a href="#" class="btn btn-primary">Explore More</a>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!--popular-->
+
+            <section class="section popular">
+                <div class="container">
+
+                    <a href="#" class="btn btn-primary">Popular Product</a>
+
+                    <h2 class="h2 section-title">
+                        Cafena Popular Product
+                    </h2>
+
+                    <ul class="popular-product-list">
+
+                        <li class="popular-card">
+
+                            <figure class="popular-icon">
+                                <img src="./images/popular-banner-1.png" width="160" height="160" loading="lazy" alt="popular-product-banner">
+                            </figure>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    Vicaragua Coffee Beans
+                                </h3>
+
+                                <p class="product-price">
+                                    $29
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="popular-card">
+
+                            <figure class="popular-icon">
+                                <img src="./images/popular-banner-2.png" width="160" height="160" loading="lazy" alt="popular-product-banner">
+                            </figure>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    Espresso Ristretto
+                                </h3>
+
+                                <p class="product-price">
+                                    $20
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="popular-card">
+
+                            <figure class="popular-icon">
+                                <img src="./images/popular-banner-3.png" width="160" height="160" loading="lazy" alt="popular-product-banner">
+                            </figure>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    Ethiopia Coffee
+                                </h3>
+
+                                <p class="product-price">
+                                    $45
+                                </p>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+            <!--coffee machine buy-->
+
+            <section class="section coffee-machine" aria-label="Coffee-Machine">
+                <div class="container">
+
+                    <figure class="coffee-machine-banner">
+                        <img src="./images/coffee-machine-banner.png" width="380" height="600"  alt="coffee-machine-banner" class="coffee-machine-img">
+                    </figure>
+
+                    <div class="coffee-machine-data-content">
+
+                        <h2 class="h2 section-title">
+                            COFFEE MACHINE,BUY
+                            FOR HOME
+                        </h2>
+
+                        <p class="section-text">
+                            Donec et nibh maximus, congue est eu, mattis nunc. Praesent ut quam quis quam venenatis fringilla. Morbi vestibulum id tellus mmodo mattis. Aliquam erat volutpat.
+                        </p>
+
+                        <strong class="strong-section--text">
+                            mattis nunc. Praesent ut quam quis quam venenatis fringilla. Morbi vestibulum id tellus mmodo mattis.
+                        </strong>
+
+                        <a href="#" class="btn btn-primary">Discover Now</a>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--product-->
+
+            <section class="section product" aria-label="Product">
+                <div class="container">
+
+                    <div class="product-data-content">
+
+                        <h2 class="h2 section-title">
+                            Cafena Best Product
+                        </h2>
+
+                        <a href="#" class="btn btn-primary">Cafena Best Product</a>
+                    </div>
+
+                    <ul class="product-list">
+
+                        <li class="product-card">
+
+                            <div class="product-icon-bg">
+                                <img src="./images/product-banner-1.png" width="112" height="175" loading="lazy" alt="product-banner" class="product-img">
+                            </div>
+
+                            <div class="ratting-wrapper">
+                                <p class="text">Rating:</p>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                            </div>
+
+                            <h3 class="h3 product-name">
+                                Vicaragua Coffee Beans
+                            </h3>
+
+                            <div class="product-bottom">
+                                Price: <span class="span-price">$25</span>
+                            </div>
+
+                        </li>
+
+                        <li class="product-card">
+
+                            <div class="product-icon-bg">
+                                <img src="./images/product-banner-2.png" width="112" height="175" loading="lazy" alt="product-banner" class="product-img">
+                            </div>
+
+                            <div class="ratting-wrapper">
+                                <p class="text">Rating:</p>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                            </div>
+
+                            <h3 class="h3 product-name">
+                                Americano Coffee
+                            </h3>
+
+                            <div class="product-bottom">
+                                Price: <span>$25</span>
+                            </div>
+
+                        </li>
+
+                        <li class="product-card">
+
+                            <div class="product-icon-bg">
+                                <img src="./images/product-banner-3.png" width="112" height="175" loading="lazy" alt="product-banner" class="product-img">
+                            </div>
+
+                            <div class="ratting-wrapper">
+                                <p class="text">Rating:</p>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                            </div>
+
+                            <h3 class="h3 product-name">
+                                Virgin Coffee Gred
+                            </h3>
+
+                            <div class="product-bottom">
+                                Price: <span>$25</span>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+            <!--testimonial-->
+
+            <section class="section testimonial" aria-label="Testimonial">
+                <div class="container">
+
+                    <a href="#" class="btn btn-primary">CUSTOMER FEEDBACK</a>
+
+                    <h2 class="h2 section-title">
+                        OUR CUSTOMER REVIEW
+                    </h2>
+
+                    <div class="testimonial-wrapper">
+
+                        <div class="testimonial-slide">
+                            <blockquote class="blockquote-text">
+                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem opposed to using 'Content here, content here..
+                            </blockquote>
+
+                            <figure class="avater-banner">
+                                <img src="./images/testimonial-1.svg" width="76" height="76" loading="lazy" alt="testimonial-banner">
+                            </figure>
+
+                            <h4 class="avater-name">
+                                Rasalida Williamson
+                            </h4>
+
+                          </div>
+
+                          <div class="testimonial-slide">
+                            <blockquote class="blockquote-text">
+                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem opposed to using 'Content here, content here..
+                            </blockquote>
+
+                            <figure class="avater-banner">
+                                <img src="./images/testimonial-2.svg" width="76" height="76" loading="lazy" alt="testimonial-banner">
+                            </figure>
+
+                            <h4 class="avater-name">
+                                Varonikavsky
+                            </h4>
+                            
+                          </div>
+
+                          <div class="testimonial-slide">
+                            <blockquote class="blockquote-text">
+                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem opposed to using 'Content here, content here..
+                            </blockquote>
+
+                            <figure class="avater-banner">
+                                <img src="./images/testimonial-3.svg" width="76" height="76" loading="lazy" alt="testimonial-banner">
+                            </figure>
+
+                            <h4 class="avater-name">
+                                Jasika Martiz
+                            </h4>
+                            
+                          </div>
+
+                    </div>
+
+                </div>
+            </section>
+        
+
+
+            <!--map-->
+
+            <section class="section map" aria-label="Map">
+                <div class="container">
+
+                   <div class="map-bg">
+
+                    <figure class="map-banner">
+                        <img src="./images/map-banner.png" width="587" height="391" alt="map-banner" class="w-100">
+                    </figure>
+
+                    <div class="map-from-reservation-content">
+
+                        <p class="section-subtitle">
+                            RESERVATION
+                        </p>
+
+                        <h2 class="h2 section-title">
+                            BOOKING A TABLE
+                        </h2>
+
+                        <div class="input-wrapper">
+
+                            <div class="icon-wrapper">
+                                <select name="person" class="input-field">
+
+                                    <option value="1-person">1-person</option>
+                                    <option value="2-person">2-person</option>
+                                    <option value="3-person">3-person</option>
+                                    <option value="4-person">4-person</option>
+                                    <option value="5-person">5-person</option>
+
+                                </select> 
+                            </div>
+
+                            <div class="icon-wrapper">
+
+                                <input type="date" name="date" placeholder="12/06/2022" class="input-field">
+
+                            </div>
+
+                            <div class="icon-wrapper">
+
+                                <input type="email" name="Email" id="email" placeholder="Email" class="input-field">
+
+                            </div>
+                           
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            BOOK A TABLE
+                        </button>
+
+                    </div>
+
+                   </div>
+
+                </div>
+            </section>
+
+
+            <!--blog-->
+
+            <section class="section blog" aria-label="Blog">
+                <div class="container">
+
+                    <a href="#" class="btn btn-primary">FROM OUR BLOG</a>
+
+                    <h2 class="h2 section-title">
+                        OUR NEWS & ARTICLES
+                    </h2>
+
+                    <ul class="blog-list">
+
+                        <li class="blog-card">
+                            <figure class="blog-banner">
+                               <img src="./images/article-banner-1.png" width="350" height="309" alt="article-banner" class="w-100">
+                            </figure>
+
+                            <div class="blog-text-content">
+
+                                <h4 class="blog-info">
+                                    <span>BY:</span>
+                                    Cafena / Burger / Apr 30, 2022
+                                </h4>
+    
+                                <h3 class="h3 blog-title">
+                                    Build A Cool Morning With
+                                    Cafena Coffee
+                                </h3>
+    
+                                <a href="#" class="blog-action">
+                                    Read More
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+
+                            </div>
+                        </li>
+
+                        <li class="blog-card">
+                            <figure class="blog-banner">
+                               <img src="./images/article-banner-2.png" width="350" height="309" alt="article-banner" class="w-100">
+                            </figure>
+
+                            <div class="blog-text-content">
+
+                                <h4 class="blog-info">
+                                    <span>BY:</span>
+                                    Cafena / Burger / Apr 30, 2022
+                                </h4>
+    
+                                <h3 class="h3 blog-title">
+                                    Build A Cool Morning With
+                                    Cafena Coffee
+                                </h3>
+    
+                                <a href="#" class="blog-action">
+                                    Read More
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+
+                            </div>
+                        </li>
+
+                        <li class="blog-card">
+                            <figure class="blog-banner">
+                               <img src="./images/article-banner-3.png" width="350" height="309" alt="article-banner" class="w-100">
+                            </figure>
+
+                            <div class="blog-text-content">
+
+                                <h4 class="blog-info">
+                                    <span>BY:</span>
+                                    Cafena / Burger / Apr 30, 2022
+                                </h4>
+    
+                                <h3 class="h3 blog-title">
+                                    Build A Cool Morning With
+                                    Cafena Coffee
+                                </h3>
+    
+                                <a href="#" class="blog-action">
+                                    Read More
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+
+    <!--footer-->
+
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="container">
+
+                
+
+                    <a href="#" class="phone-number">
+                        <img src="./images/phone-icon.svg" width="18" height="28" loading="lazy" alt="phone-number">
+
+                        Phone:
+                        +88019 339 702 520
+                    </a>
+
+                    
+                    <address class="location">
+                        <img src="./images/location-icon.svg" width="18" height="28" loading="lazy" alt="location">
+
+                        Address:
+                        30 North Wes New  
+                    </address>
+
+                    <div class="footer-input-wrapper">
+
+                        <input type="email" name="Email" id="email" placeholder="Enter your email" class="input-field">
+
+                        
+                        <img src="./images/send-icon.svg" width="19" height="20" loading="lazy" alt="send-icon" class="footer-send-icon">
+                        
+
+                    </div>
+
+
+                <div class="footer-details">
+
+                    
+
+                    <div class="footer-about">
+                        <p class="footer-text">
+                            <img src="./images/footer-logo.svg" width="65" height="53" loading="lazy" footer-logo" class="footer-icon">
+
+                            Donec et nibh maximus, congue est eu, mattis nunc. Praesent ut quam quis quam venenatis fringilla. Morbi vestibulum
+                        </p>
+                    </div>
+
+                
+
+
+                    <div class="footer-socials">
+
+                        <ul class="footer-list">
+
+                            <li>
+                                <a href="#" class="footer-link icon-facebook">
+                                    <ion-icon name="logo-facebook" aria-hidden="true"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link icon-instagram">
+                                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link icon-twitter">
+                                    <ion-icon name="logo-twitter" aria-hidden="true"></ion-icon>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+            <p class="copyright">
+                ALL RIGHT RESERVED &copy; 2022
+            </p>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+    <!--JS link-->
+    <script src="./JS/script.js"></script>
+
+    <!--ion-icon link-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

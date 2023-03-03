@@ -1,0 +1,1148 @@
+/*--------------------------------
+#CSS VARIABLES
+----------------------------------*/
+
+:root {
+
+    /**
+    * colors
+    */
+
+    --background-color-F6F2EE: hsl(30, 33%, 95%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+
+
+    --232020: hsl(0, 5%, 13%);
+    --404040: hsl(0, 0%, 25%);
+    --D48A5C: hsl(23, 58%, 60%);
+    --141313: hsl(0, 4%, 8%);
+    --414141: hsl(0, 0%, 25%);
+    --6F6F6F: hsl(0, 0%, 43%);
+    --EAB665: hsl(37, 76%, 66%);
+    --F2EAE2: hsl(30, 38%, 92%);
+
+    --gradient: linear-gradient(to top hsl(17, 41%, 35%); hsl(17, 41%, 0%));
+
+    /**
+    * box-shadow
+    */
+
+    --shadow-1: 0px 4px 4px hsla(0, 0%, 0%, 0.25);
+    --shadow-2: 0px 4px 7px hsla(0, 0%, 0%, 0.25);
+
+
+
+    /**
+    * typography
+    */
+
+    --font-family-Montserrat: 'Montserrat', sans-serif;
+    --font-family-ZCOOL-XiaoWei: 'ZCOOL XiaoWei', sans-serif;
+    --font-family-Open-Sans: 'Open Sans', sans-serif;
+
+
+    --font-size-70: 3.75rem; /* 60px */
+    --font-sizw-50: 2.8125rem; /* 45px */
+    --font-size-30: 1.875rem;
+    --font-size-24: 1.5rem;
+    --font-size-20: 1.25rem;
+    --font-size-18: 1.125rem;
+    --font-size-16: 1rem;
+    --font-size-14: 0.875rem;
+    --font-size-10: 0.625rem;
+
+    --font-weight-Regular-400: 400px;
+    --font-weight-SemiBold-600: 600px;
+
+
+    /**
+    * transition
+    */
+
+    --transition-1: 250ms ease;
+    --transition-2: 500ms ease;
+    --transition-3: 1000ms ease;
+
+}
+
+
+/*----------------------
+#CSS RESET
+------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+a,
+img,
+span,
+strong,
+data,
+input,
+button,
+select,
+ion-icon{
+    display: block;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+img{
+    height: auto;
+}
+
+input,
+button,
+select{
+    background: none;
+    border: none;
+    font-family: inherit;
+}
+
+input,
+select{
+    width: 100%;
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+address{
+    font-family: normal;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--background-color-F6F2EE);
+    color: var(--black);
+    font-family: var(--font-family-Open-Sans);
+    font-size: var(--font-size-10);
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--404040);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--D48A5C);
+    border-radius: 15px;
+}
+
+
+
+/*-----------------------------
+#REUSED STYLE
+-------------------------------*/
+
+.container{
+    padding-inline: 16px;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.h1{
+    font-family: var(--font-family-ZCOOL-XiaoWei);
+    font-size: var(--font-size-70);
+    font-weight: var(--font-weight-Regular-400);
+    color: var(--232020);
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+.h2{
+    font-family: var(--font-family-ZCOOL-XiaoWei);
+    font-size: var(--font-sizw-50);
+    font-weight: var(--font-weight-Regular-400);
+    color: var(--black);
+}
+
+.section-text{
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-Regular-400);
+    line-height: 1.6;
+    color: var(--404040);
+}
+
+.btn{
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-Regular-400);
+    max-width: max-content;
+    padding: 14px 30px;
+}
+
+.btn-primary{
+    background-color: var(--black);
+    color: var(--white);
+    box-shadow: var(--shadow-1);
+}
+
+.btn-seconday{
+    background: transparent;
+    border: 1px solid var(--D48A5C);
+    color: var(--black);
+    box-shadow: var(--shadow-1);
+}
+
+/*----------------------------
+#HEADER
+------------------------------*/
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-block: 25px;
+    z-index: 4;
+}
+
+.header.active{
+    background-color: var(--white);
+    box-shadow: var(--shadow-1);
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 74px;
+    height: 49px;
+}
+
+.search{
+    margin-inline-start: auto;
+    font-size: 20px;
+}
+
+.nav-open-btn{
+    font-size: 25px;
+}
+
+.navbar{
+    position: absolute;
+    top: 85px;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: var(--transition-2);
+}
+
+.navbar.active{
+    max-height: 310px;
+    visibility: visible;
+}
+
+.navbar-list{
+    padding-block-start: 15px;
+}
+
+.navbar-link{
+    font-family: var(--font-family-Montserrat);
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-Regular-400);
+    color: var(--black);
+    padding: 10px 20px;
+}
+
+
+/*------------------------
+#HERO
+--------------------------*/
+
+.hero{
+    padding-top: 90px;
+}
+
+.hero .container{
+    display: grid;
+    gap: 40px;
+}
+
+.hero-banner img{
+    transition: var(--transition-1);
+}
+
+.hero-banner img:is(:hover, :focus){
+    transform: scale(1.1);
+}
+
+.hero-btn-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hero .section-text{
+    margin-block: 12px 30px;
+}
+
+
+/*----------------------------
+#COFFEE LIST
+------------------------------*/
+
+.coffee{
+    margin-block-start: 60px;
+}
+
+.coffee-list{
+    display: grid;
+    gap: 30px;
+}
+
+.coffee-banner{
+    position: relative;
+}
+
+.coffee .number{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-family: var(--font-family-ZCOOL-XiaoWei);
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-Regular-400);
+    color: var(--white);
+}
+
+.coffee .cooffee-tag{
+    position: absolute;
+    top: 30px;
+    left: 8px;
+    font-family: var(--font-family-ZCOOL-XiaoWei);
+    font-size: var(--font-size-24);
+    font-weight: var(--font-weight-Regular-400);
+    color: var(--white);
+}
+
+.coffee-section-text{
+    position: absolute;
+    bottom: 20px;
+    left: 8px;
+    font-size: var(--font-size-20);
+    font-weight: var(--font-weight-Regular-400);
+    color: var(--white);
+    width: 195px;
+    line-height: 1.6;
+}
+
+/*------------------------------
+#ROASTED
+--------------------------------*/
+
+.roasted{
+    margin-block-start: 60px;
+    background-image: url('../images/coffee-roasted-banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    padding: 30px;
+    text-align: center;
+    display: grid;
+    place-content: center;
+}
+
+.roasted-data-content{
+    margin-block-start: 40px;
+}
+
+.roasted .section-text{
+    margin-block: 14px 20px;
+}
+
+.roasted .btn{
+   margin-inline: auto;
+}
+
+
+/*---------------------------
+#POPULAR
+-----------------------------*/
+
+.popular{
+    margin-block-start: 60px;
+}
+
+.popular .btn{
+    margin-inline: auto;
+}
+
+.popular .section-title{
+    margin-block: 14px 30px;
+    text-align: center;
+}
+
+.popular-product-list{
+    display: grid;
+    gap: 30px;
+}
+
+
+.popular-icon img{
+    margin-inline: auto;
+    width: 120px;
+}
+
+
+.product-title{
+    text-align: center;
+    font-family: var(--font-family-ZCOOL-XiaoWei);
+    font-size: var(--font-size-30);
+    font-weight: var(--font-weight-Regular-400);
+    color: var(--232020);
+}
+
+.product-price{
+    text-align: center;
+    margin-block-start: 8px;
+    font-size: var(--font-size-20);
+    font-weight: var(--font-weight-SemiBold-600);
+    color: var(--D48A5C);
+}
+
+
+/*----------------------------
+#COFFEE-MACHINE-BUY
+------------------------------*/
+
+.coffee-machine{
+    margin-block-start: 60px;
+}
+
+.coffee-machine .container{
+    display: grid;
+    gap: 30px;
+}
+
+.coffee-machine-img{
+    width: 100%;
+}
+
+.coffee-machine .section-text{
+    margin-block-start: 15px;
+}
+
+.strong-section--text{
+    font-size: var(--font-size-20);
+    font-weight: var(--font-weight-Regular-400);
+    color: var(--141313);
+    line-height: 1.6;
+    margin-block-start: 6px;
+    margin-block-end: 20px;
+}
+
+
+/*--------------------------
+#PRODUCT
+----------------------------*/
+
+.product{
+    margin-block-start: 60px;
+}
+
+.product-data-content{
+    margin-block-end: 40px;
+}
+
+.product .section-title{
+    margin-block-end: 20px;
+}
+
+.product-list{
+    display: grid;
+    gap: 30px;
+}
+
+.product-card{
+    background-color: var(--white);
+    padding: 12px;
+    /* width: 350px;
+    height: 354px; */
+}
+
+.product-icon-bg{
+    background: var(--black);
+}
+
+.product-img{
+    margin-inline: auto;
+    width: 110px;
+    height: 170px;
+    /* object-fit: cover; */
+    transition: var(--transition-1);
+}
+
+.product-img:is(:hover, :focus){
+    transform: scale(1.1);
+}
+
+.ratting-wrapper{
+    margin-block: 10px 18px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+}
+
+.product .text{
+    font-weight: var(--font-weight-Regular-400);
+    color: var(--black);
+}
+
+.ratting-wrapper ion-icon{
+    color: var(--D48A5C);
+}
+
+.product-name{
+    font-family: var(--font-family-ZCOOL-XiaoWei);
+    font-size: var(--font-size-30);
+    font-weight: var(--font-weight-Regular-400);
+    margin-block-end: 8px;
+}
+
+.product-bottom{
+    display: flex;
+    gap: 5px;
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-SemiBold-600);
+    color: var(--black);
+}
+
+.span-price{
+    color: var(--D48A5C);
+}
+
+
+/*----------------------------
+#TESTIMONIAL
+------------------------------*/
+
+.testimonial{
+    margin-block: 60px;
+}
+
+.testimonial .btn{
+    margin-inline: auto;
+}
+
+.testimonial .section-title{
+    text-align: center;
+    margin-block: 15px 40px;
+}
+
+.testimonial-wrapper{
+    display: grid;
+    gap: 25px;
+}
+
+.testimonial-slide{
+    background-color: var(--white);
+    padding: 12px;
+  }
+
+.blockquote-text{
+    text-align: center;
+    font-size: var(--font-size-20);
+    font-weight: var(--font-weight-Regular-400);
+    color: var(--6F6F6F);
+    line-height: 1.6;
+}
+
+.avater-banner img{
+    margin-inline: auto;
+    margin-block: 10px 8px;
+    width: 70px;
+}
+
+.avater-name{
+    text-align: center;
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-SemiBold-600);
+    color: var(--black);
+}
+
+
+/*---------------------------
+#MAP
+-----------------------------*/
+
+.map{
+    margin-block-start: 60px;
+}
+
+.map-bg{
+    display: grid;
+    gap: 40px;
+}
+
+.map-bg{
+    background-color: var(--white);
+}
+
+.map-from-reservation-content{
+    padding: 30px;
+    text-align: center;
+}
+
+.map .section-subtitle{
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-Regular-400);
+    text-transform: uppercase;
+    color: var(--D48A5C);
+}
+
+.map .section-title{
+    margin-block: 8px 30px;
+}
+
+.input-field{
+    background-color: var(--6F6F6F);
+    padding: 10px;
+    font-size: var(--font-size-18);
+    margin-block: 10px;
+}
+
+.input-field::placeholder{
+    color: var(--black);
+}
+
+.map .btn{
+    margin-inline: auto;
+    text-transform: uppercase;
+}
+
+
+/*--------------------------
+#BLOG
+----------------------------*/
+
+.blog{
+    margin-block-start: 60px;
+}
+
+.blog .btn{
+    margin-inline: auto;
+}
+
+.blog .section-title{
+    text-align: center;
+    margin-block: 20px 40px;
+}
+
+.blog-list{
+    display: grid;
+    gap: 30px;
+}
+
+.blog-card{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.blog-text-content{
+    padding: 10px;
+}
+
+.blog-info{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-Regular-400);
+}
+
+.blog-info span{
+    color: var(--D48A5C);
+}
+
+.blog-title{
+    font-family: var(--font-family-ZCOOL-XiaoWei);
+    font-size: var(--font-size-24);
+    font-weight: var(--font-weight-Regular-400);
+    margin-block: 8px 12px;
+    line-height: 1.5;
+}
+
+.blog-action{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--D48A5C);
+}
+
+
+/*----------------------
+#FOOTER
+------------------------*/
+
+.footer{
+  background: var(--white);
+  margin-block-start: 60px;
+  padding: 30px;
+}
+
+.footer-top .container{
+    display: grid;
+    gap: 30px;
+}
+
+.phone-number,
+.location{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: var(--font-size-16);
+
+    font-family: var(--font-family-ZCOOL-XiaoWei);
+    font-size: var(--font-size-20);
+    font-weight: var(--font-weight-SemiBold-600);
+    color: var(--black);
+}
+
+.footer-input-wrapper{
+    position: relative;
+}
+
+.footer-send-icon{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+}
+
+.footer-about{
+    margin-block-end: 20px;
+}
+
+.footer-icon{
+    width: 60px;
+}
+
+.footer-text{
+    font-family: var(--font-family-Montserrat);
+    font-size: var(--font-size-20);
+    font-weight: var(--font-weight-Regular-400);
+    line-height: 1.3;
+    margin-block-start: 10px;
+}
+
+.footer-list{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+}
+
+.footer-link{
+    border: 1px solid var(--black);
+    padding: 8px;
+    box-shadow: var(--shadow-1);
+    border-radius: 5px;
+}
+
+.icon-facebook,
+.icon-twitter{
+    color: blue;
+}
+
+.icon-instagram{
+    color: red;
+}
+
+.footer-bottom{
+    padding-block-start: 30px;
+    text-align: center;
+}
+
+.copyright{
+    border-top: 1px solid var(--D48A5C);
+    padding-top: 20px;
+    font-size: var(--font-size-20);
+    text-transform: uppercase;
+}
+
+
+
+/*--------------------------
+#MEDIA-QUERIES
+----------------------------*/
+
+/**
+* responsive for larger than 575px screen
+*/
+
+@media(min-width: 575px){
+
+    /**
+    * custom property
+    */
+
+    :root{
+
+        /**
+        * typography
+        */
+
+    --font-size-70: 3.875rem; /* 62px */
+    --font-sizw-50: 3rem; /* 48px */
+
+    }
+
+
+    /**
+    * reused style
+    */
+
+    .container{
+        max-width: 550px;
+        margin-inline: auto;
+        width: 100%;
+    }
+
+    
+    .coffee-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /**
+    * popular
+    */
+
+    .popular-product-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/**
+* responsive for larger than 768px screen
+*/
+
+@media(min-width: 768px){
+
+    /**
+    * custom property
+    */
+
+    :root{
+
+        /**
+        * typography
+        */
+
+    --font-size-70: 4.0625rem; /* 65px */
+    --font-sizw-50: 3.125rem; /* 50px */
+
+    }
+
+
+    /**
+    * reused style
+    */
+
+    .container{
+        max-width: 750px;
+        margin-inline: auto;
+        width: 100%;
+    }
+
+
+    /**
+    * hero
+    */
+
+    .hero .container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    
+    /**
+    * coffee
+    */
+
+    .coffee-list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /**
+    * popular
+    */
+
+    .popular-product-list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /**
+    * machine
+    */
+
+    .coffee-machine .container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+
+    /**
+    * product
+    */
+
+    .product-list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /**
+    * testimonial
+    */
+
+    .testimonial-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /**
+    * map
+    */
+
+    .map-bg{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .map-banner img{
+        height: 350px;
+    }
+
+
+    /**
+    * blog
+    */
+
+    .blog-list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /**
+    * footer
+    */
+
+    .footer-top .container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    
+
+
+}
+
+
+/**
+* responsive for larger than 992px screen
+*/
+
+@media(min-width: 992px){
+
+
+    /**
+    * custom property
+    */
+
+    :root{
+
+        /**
+        * typography
+        */
+
+    --font-size-70: 4.25rem; /* 68px */
+
+    }
+
+    /**
+    * reused style
+    */
+
+    .container{
+        max-width: 950px;
+        margin-inline: auto;
+        width: 100%;
+    }
+
+
+    /**
+    * header
+    */
+
+    .nav-open-btn{
+        display: none;
+    }
+
+    .navbar{
+        all: unset;
+    }
+
+    .navbar-list{
+        display: flex;
+    }
+
+
+    /**
+    * coffee
+    */
+
+    .roasted .section-text{
+        width: 600px;
+        margin-inline: auto;
+    }
+
+
+    /**
+    * product
+    */
+
+    .product .product-data-content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    /**
+    * testimonial
+    */
+
+    .testimonial-wrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+}
+
+
+/**
+* responsive for larger than 1200px screen
+*/
+
+@media(min-width: 1200px){
+
+    /**
+    * custom property
+    */
+
+    :root{
+
+        /**
+        * typography
+        */
+
+    --font-size-70: 4.375rem; /* 70px */
+
+    }
+
+    /**
+    * reused style
+    */
+
+    .container{
+        max-width: 1150px;
+        margin-inline: auto;
+        width: 100%;
+    }
+
+
+    /**
+    * roasted coffee
+    */
+
+    .roasted{
+        height: 500px;
+    }
+
+
+}
+
+
+/**
+* responsive for larger than 1400px screen
+*/
+
+@media(min-width: 1400px){
+
+    /**
+    * reused style
+    */
+
+    .container{
+        max-width: 1350px;
+        margin-inline: auto;
+        width: 100%;
+    }
+
+    /**
+    * hero
+    */
+
+    .hero .section-text{
+        width: 450px;
+    }
+
+
+    /**
+    * coffee machine buy
+    */
+
+    .coffee-machine .section-text{
+        width: 450px;
+    }
+
+    .strong-section--text{
+        width: 380px;
+    }
+
+
+}
+
+
+
